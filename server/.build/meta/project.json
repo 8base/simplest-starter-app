@@ -1,0 +1,10 @@
+{
+  "name": "server",
+  "functions": [
+    {
+      "name": "contacts",
+      "handler": "contacts.handler",
+      "pathToFunction": "src/webhooks/contacts/handler.ts"
+    }
+  ]
+}

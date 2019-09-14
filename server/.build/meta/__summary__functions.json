@@ -1,0 +1,18 @@
+{
+  "functions": [
+    {
+      "name": "contacts",
+      "handler": "contacts.handler"
+    }
+  ],
+  "resolvers": [],
+  "triggers": [],
+  "webhooks": [
+    {
+      "name": "contacts",
+      "functionName": "contacts",
+      "httpMethod": "GET",
+      "path": "contacts"
+    }
+  ]
+}

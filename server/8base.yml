@@ -1,14 +1,7 @@
 functions:
-  # Example resolver definition
-  simpleResolver:
-    type: resolver
-    handler:
-      code: src/resolvers/simpleResolver/handler.ts
-    schema: src/resolvers/simpleResolver/schema.graphql
-  # Example webhook definition
-  simpleWebhook:
+  contacts:
     type: webhook
     handler:
-      code: src/webhooks/simpleWebhook/handler.ts
-    path: /simpleWebhook
+      code: src/webhooks/contacts/handler.ts
+    path: contacts
     method: GET
