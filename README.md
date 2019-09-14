@@ -11,8 +11,7 @@ The **resolver** can be invoked through the GraphQL API.
 
 Both functions connect to the workspace database using the `context.api` argument passed to the function.
 
-A `schema.json` file exists at the `src/server` path. Import it to an empty workspace using `8base import -f schema.json`
+A `schema.json` file exists at the `src/server` path. Import it to an empty workspace using `8base import -f simple-schema.json`
 
 ### Client
-To run the node script, run `$ node script.js "SEARCH TERM"`.
-To run the bash script, run `$ bash script.sh`.
+To run the bash script, run `$ bash script.sh COMMAND VALUE`.
