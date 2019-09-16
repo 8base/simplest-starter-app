@@ -3,7 +3,7 @@
 # Data variable
 DATA="none"
 API_TOKEN='<YOUR_API_TOKEN>'
-WORKSPACE_ENDPONT='<YOUR_WORKSPACE_ENDPOINT>'
+WORKSPACE_ENDPOINT='<YOUR_WORKSPACE_ENDPOINT>'
 
 # Check for shell arguments.
 case $1 in
@@ -26,7 +26,7 @@ if [ "$DATA" == "none" ]
 then
 	echo "Exiting..."
 else
-	curl -X POST $WORKSPACE_ENDPONT \
+	curl -X POST $WORKSPACE_ENDPOINT \
 	     -H "Content-Type: application/json"  \
 	     -H "Authorization: Bearer $API_TOKEN"  \
 	     -d "$DATA" | json_pp
